@@ -1,0 +1,49 @@
+/* Mobile first style */
+
+/* Mobile screen code*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+}
+
+.title {
+    width: 100%;
+    color: blue;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Tablet screen code */
+
+@media only screen and (min-width: 600px) {
+
+    .container {
+        background-color: pink;
+    }
+
+    .title {
+        color: black;
+        font-size: 30px;
+    }
+
+}
+
+/* Computer screen code */
+
+@media only screen and (min-width: 950px) {
+
+    .container {
+        background-color: white;
+    }
+
+    .title {
+        color: green;
+        font-size: 45px;
+    }
+
+}
