@@ -1,3 +1,7 @@
 ## My Newspaper
 
-This is my newspaper article for Radium Rocket's Become a Software Developer Course, using CSS FlexBox and MediaQueries.
+This is my newspaper article for Radium Rocket's Become a Software Developer Course, using CSS, FlexBox and MediaQueries.
+
+- (**Instructions**)
+
+To open this project, you have to download this repository and open index.html
