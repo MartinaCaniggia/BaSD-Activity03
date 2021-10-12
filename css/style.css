@@ -66,14 +66,14 @@ body {
     line-height: 1;
 }
 
-.box {
+.news {
     justify-content: space-around;
     margin: 20px;
     padding: 10px;
     background-color: rgb(184, 184, 184);
 }
 
-.box p {
+.news p {
     margin-bottom: 5px;
 }
 
@@ -119,18 +119,18 @@ body {
     line-height: 1;
 }
 
-.content-box {
+.content-news {
     justify-content: space-around;
     margin: 20px;
     padding: 10px;
     background-color: rgb(184, 184, 184);
 }
 
-.content-box p {
+.content-news p {
     margin-bottom: 5px;
 }
 
-.content-box img {
+.content-news img {
     width: 100px;
     height: 100px;
     margin-top: 10px;
