@@ -5,3 +5,7 @@
 # (**Instructions**)
 
 > To open this project, you have to download this repository and open index.html and style.css. It is recommended to open the browser and go to the 'inspect' part
+
+## Activity-05
+
+- This is my new part of the article for Radium Rocket's Become a Software Developer Course, using CSS, FlexBox, MediaQueries and JavaScript.
