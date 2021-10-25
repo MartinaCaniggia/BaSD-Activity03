@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./subscription.css" />
-    <script src="./subscription.js"></script>
     <title>The Portal</title>
   </head>
   <body>
@@ -32,7 +31,7 @@
     <h2 id="bonus">Welcome</h2>
     <legend class="submit">Submit!</legend>
     <form class="form">
-      <div class="column-one">
+      <div class="column">
         <div>
           <p>Full Name</p>
           <input
@@ -100,7 +99,7 @@
           >
         </div>
       </div>
-      <div class="column-two">
+      <div class="column">
         <div>
           <p>Phone Number</p>
           <input
@@ -168,13 +167,21 @@
           >
         </div>
       </div>
+      <div class="btn">
+        <input id="button" type="submit" value="Send" class="submit" />
+      </div>
     </form>
-    <div class="btn">
-      <input id="button" type="submit" value="Send" class="submit" />
-    </div>
     <div id="validationsDiv" class="validations-hidden">
       <span>Your form has been submitted succesfully!</span>
       <ul id="validationsList"></ul>
     </div>
+    <div id="modal-simple" class="modal">
+      <div class="modal-content">
+        <h1></h1>
+        <ul></ul>
+        <span class="btnC">&times;</span>
+      </div>
+    </div>
+    <script src="subscription.js"></script>
   </body>
 </html>
