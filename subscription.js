@@ -301,6 +301,7 @@ const modalContainer = document.querySelector('#modal-simple');
 const modalData = document.querySelector('.modal-content > ul');
 const closeBtn = document.getElementsByClassName('btnC')[0];
 const modalTitle = document.querySelector('.modal-content > h1');
+const liModal = document.getElementsByClassName('.modalLi');
 
 window.addEventListener('load', function () {
   const currentUserName = localStorage.getItem('userName');
@@ -326,44 +327,9 @@ window.addEventListener('load', function () {
   inputId.value = currentUserId;
 });
 
-console.log(inputName.value);
-
-const urlData =
-  'https://curso-dev-2021.herokuapp.com/newsletter?' +
-  'name=' +
-  inputName.value +
-  '&' +
-  'email=' +
-  inputEmail.value +
-  '&' +
-  'password=' +
-  inputPassword.value +
-  '&' +
-  'repeatpassword=' +
-  inputRPassword.value +
-  '&' +
-  'age=' +
-  inputAge.value +
-  '&' +
-  'phone=' +
-  inputPhone.value +
-  '&' +
-  'address=' +
-  inputAddress.value +
-  '&' +
-  'city=' +
-  inputCity.value +
-  '&' +
-  'postalcode=' +
-  inputPostal.value +
-  '&idnumber=' +
-  inputId.value;
-
-console.log(urlData);
-
 function successfulModal(userInfo) {
   const jsonToString = JSON.stringify(userInfo);
-  console.log(userInfo);
+  liModal.innerHTML = `<li>Name.userInfo</li>``<li>Email.userInfo</li>``<li>Password.userInfo</li>``<li>RepeatPassword.userInfo</li>``<li>Age.userInfo</li>``<li>Phone.userInfo</li>``<li>Address.userInfo</li>``<li>City.userInfo</li>``<li>PostalCode.userInfo</li>``<li>IdNumber.userInfo</li>`;
   modalContainer.style.display = 'block';
   modalTitle.innerHTML = 'Successful Register!';
   modalData.innerHTML = `<li>${jsonToString}</li>`;
@@ -387,6 +353,37 @@ function errorModal(errorInfo) {
 
 registerForm.addEventListener('submit', function (e) {
   modalContainer.style.display = 'flex';
+  const urlData =
+    'https://curso-dev-2021.herokuapp.com/newsletter?' +
+    'name=' +
+    inputName.value +
+    '&' +
+    'email=' +
+    inputEmail.value +
+    '&' +
+    'password=' +
+    inputPassword.value +
+    '&' +
+    'repeatpassword=' +
+    inputRPassword.value +
+    '&' +
+    'age=' +
+    inputAge.value +
+    '&' +
+    'phone=' +
+    inputPhone.value +
+    '&' +
+    'address=' +
+    inputAddress.value +
+    '&' +
+    'city=' +
+    inputCity.value +
+    '&' +
+    'postalcode=' +
+    inputPostal.value +
+    '&idnumber=' +
+    inputId.value;
+
   fetch(urlData)
     .then((response) => response.json())
     .then((data) => successfulModal(data))
